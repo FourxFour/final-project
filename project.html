@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>final project</title>
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+
+<style>
+	.wrapper{
+		width: 100%;
+		overflow:hidden;
+	}
+	.nav_container {
+		width: 100%;
+		height:60px;
+	}	
+	.navbrand{
+		float:left;		
+		width: 100%;
+	}
+	.three .navbrand img{
+		padding-top:20px;
+		float:left;		
+		max-width: 100%;		
+	}
+	.header{
+		float: left;
+		height: 100%;
+		padding-left: 10px;
+	}
+	.header h1{
+		font-size: 200%;
+		margin-top: 13px;
+		color:#808080;
+	}
+	.navItem{
+		float:right;		
+		height: 100%;	
+		margin-top:20px;	
+	}
+
+	.nav>li{		
+		display:inline;
+		float:right;		
+	}
+
+	@media (max-width: 980px) {
+		.nav>li{			
+				float:left;	
+					
+			}
+		}
+
+	.nav_container .navItem .nav li a{
+		text-decoration: none;
+		color:#808080;
+		font-size: 180%;		
+		margin-right: 30px;
+	}
+
+	.jumbotron{
+		margin-top:20px;
+		width: 100%;
+		height: 1000px;
+	}
+	.jumbotron img{
+		width: 100%;
+		height: 100%;
+	}
+
+
+	.intro{
+		width:100%;
+		overflow:hidden;
+	}
+	.intro .intrcontainer{
+		width:100%;
+		overflow:hidden;
+	}
+	.intro .intrcontainer header{
+		width:100%;
+		padding-top:100px;
+		padding-bottom: 100px;
+		background-color: #333333;
+
+	}
+	.intro .intrcontainer header h1{
+		font-size: 300%;
+		color:white;	
+	}
+	.intro .intrcontainer .person1{
+		padding-top: 100px;
+		width:85%;
+		height: 500px;
+		margin:auto;
+
+	}
+
+	.intro .intrcontainer .person1 .imagecontainer{
+		width:40%;
+		float:left;
+	}
+	.intro .intrcontainer .person1 .imagecontainer .personIMG{
+		width: 330px;
+		height:330px;
+
+		border-radius: 50%;
+		overflow:hidden;
+	}
+	.intro .intrcontainer .person1 .imagecontainer .personIMG img{
+		width: 350px;
+		height:350px;
+	}
+	.intro .intrcontainer .person1 .infocontainer{
+		float:left;
+		width: 60%;
+	}
+
+	.intro .intrcontainer .person1 .infocontainer .personInfo{
+		float:left;
+	}
+	.intro .intrcontainer .person1 .infocontainer .personInfo p{
+		font-size: 140%;
+		color:#808080;		
+		padding-bottom: 15px;
+	}
+	.intro .intrcontainer .person1 {
+
+	}
+
+	.rational{
+		width:100%;
+		height: 600px;
+		overflow:hidden;
+	}
+	.rational .rationcontainer{
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		background-color: #E9E9E9;		
+		background-image: url("image/cs.jpg");
+	}
+
+	.rational .rationcontainer .imagecontainer {
+		height:100%;
+		width:30%;
+		float:left;
+	}
+	.rational .rationcontainer .imagecontainer .rationalIMG{
+		
+		width: 80%;
+		height:80%;
+		position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);		
+		margin: auto;
+	}
+	.rational .rationcontainer .imagecontainer .rationalIMG img{
+		width: 100%;
+		height:100%;
+	}
+	.rational .rationcontainer .infocontainer .personInfo{
+		font-size: 140%;
+		color:white;		
+		padding-bottom: 15px;	
+	}
+	.rational .rationcontainer .infocontainer .personInfo h1{
+		font-size:300%;
+		text-align:center;
+		padding-top:20px;
+		padding-bottom: 20px;
+	}
+	.foot{
+		background-color: black;
+		height: 100px;
+		color:white;
+	}
+	.foot .footcontainer .content{
+		padding-top:20px;
+	}
+	.foot .footcontainer .content p{
+		text-align: right;
+	}
+	.foot .footcontainer .content p a{
+		text-decoration: none;
+		color:white;
+		font-size: 120%;		
+	}
+	.sitemap{
+		background-color: white;
+		height: 500px;
+		color:#808080;
+		font-size: 200%;
+	}
+	.project{
+		width:100%;
+		height: 1800px;
+		background-color: #FAFAFA;
+
+	}
+	.project .projectcontainer {
+		width: 100%;
+		height: 100%;		
+	}
+	.project .projectcontainer .projectheader{
+		width: 100%;
+		height: 15%;	
+		background-color:#848484;	
+		color:white;
+	}
+	.project .projectcontainer .projectheader header{
+		position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
+	}
+	.project .projectcontainer .projectheader header h1{
+		font-size: 300%;
+		text-align:center;
+	}
+	.project .projectcontainer .contentcontainer{
+		width:75%;
+		height: 70%;
+		margin:auto;
+	}
+	table{
+		width:100%;
+	}
+	table tr{
+		width:100%;
+		height: 350px;
+	}
+	table tr td{
+		width:25%;
+		height:150px;
+		padding:10px 10px 10px 10px;
+	}
+	table tr td .week{
+		width:250px;
+		height:250px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	table tr td img{
+		width:300px;
+		height:300px;
+		
+	}
+
+
+
+	a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #27AE61 url("image/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+
+</style>
+<head>
+	<script src="jquery-1.11.3.js"></script>	
+</head>
+
+<script>
+	$(document).ready(function(){
+		$('a[href="#footer"],a[href="#rational"],a[href="#Prototype"],a[href="#project"],a[href="#intro"]').on('click',function(e){
+			e.preventDefault();
+			var target = this.hash;
+			var $target = $(target);
+
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top},900,'swing',function(){
+					window.location.hash = target;
+			});
+		});
+
+	$('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+
+		var amountScrolled = 300;
+
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > amountScrolled) {
+				$('a.back-to-top').fadeIn('slow');
+			} else {
+				$('a.back-to-top').fadeOut('slow');
+			}
+		});
+
+		$('a.back-to-top').click(function() {		
+			$('html, body').animate({
+				'scrollTop': 0
+			}, 800);
+			return false;
+		});
+	});
+
+
+	
+</script>
+
+
+<body>
+	<div class = "wrapper">	
+		<div class ="container">	
+			<div class ="row">
+				<div class ="nav_container">
+					<div class = "three columns">
+						<div class ="navbrand">
+							<img src = "image/icon/logo.jpg" alt="group icon">					
+						</div>	
+					</div>
+					<div class = "nine columns">
+						<div class = "navItem">
+							<ul class= "nav">
+								<li><a href ="#footer">Blog</a></li>
+								<li><a href ="#rational">Rationale</a></li>
+								<li><a href ="#Prototype">Prototype</a></li>
+								<li><a href ="#project">Project</a></li>
+								<li><a href ="#intro">Intro</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<section class = "jumbotron">
+			<img src = "image/webdevelopment.jpg">
+		</section>
+		<div class = "intro" id = "intro">
+			<div class = "intrcontainer">
+				<header>
+					<h1><center>Introduction of Our Team: Group 4</center></h1>
+				</header>
+				<div class = "person1">
+
+					<div class = "imagecontainer">
+						<div class = "personIMG">
+							<img src = "image/my_image.jpg">
+						</div>
+					</div>
+					<div class = "infocontainer">
+						<div class = "personInfo">
+							<p>Name: Song Tao Chen (Chester)
+							</p>
+							<p>Name: Email: schen310@my.bcit.ca
+							</p>
+							<p>Job title: Engineering Technologist
+							</p>
+							<p>Company: Phase Technology
+							</p>
+						</div>
+					</div>
+					<hr>		
+
+				</div>
+				
+				<div class = "person2 person1">
+					<hr>
+					<div class = "imagecontainer">
+						<div class = "personIMG">
+							<img src = "image/my_image.jpg">
+						</div>
+					</div>
+					<div class = "infocontainer">
+						<div class = "personInfo">
+							<p>Name: Song Tao Chen (Chester)
+							</p>
+							<p>Name: Email: schen310@my.bcit.ca
+							</p>
+							<p>Job title: Engineering Technologist
+							</p>
+							<p>Company: Phase Technology
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "person3 person1">
+					<hr>
+					<div class = "imagecontainer">
+						<div class = "personIMG">
+							<img src = "image/my_image.jpg">
+						</div>
+					</div>
+					<div class = "infocontainer">
+						<div class = "personInfo">
+							<p>Name: Song Tao Chen (Chester)
+							</p>
+							<p>Name: Email: schen310@my.bcit.ca
+							</p>
+							<p>Job title: Engineering Technologist
+							</p>
+							<p>Company: Phase Technology
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "person4 person1">
+					<hr>
+					<div class = "imagecontainer">
+						<div class = "personIMG">
+							<img src = "image/my_image.jpg">
+						</div>
+					</div>
+					<div class = "infocontainer">
+						<div class = "personInfo">
+							<p>Name: Song Tao Chen (Chester)
+							</p>
+							<p>Name: Email: schen310@my.bcit.ca
+							</p>
+							<p>Job title: Engineering Technologist
+							</p>
+							<p>Company: Phase Technology
+							</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>	
+		<div class = "rational" id = "rational">
+			<div class = "rationcontainer">
+				<div class = "imagecontainer">
+						<div class = "rationalIMG">
+							<img src = "image/why.jpg">
+						</div>
+				</div>
+				<div class = "infocontainer">
+						<div class = "personInfo">
+							
+								<h1>Rationale
+								</h1>
+							
+							<p>lablabla lablabla lablabla lablabla lablabla lablabla lablabla lablabla lablabla lablabla lablabla lablabla lablabla lablabla lablabla 
+							</p>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class = "project" id = "project">
+			<div class = "projectcontainer">
+				<div class ="projectheader">
+					<header>
+						<h1>Our Final Product </h1>
+					</header>
+				</div>
+				<div class = "contentcontainer">
+					<table>
+						<tr>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+																			
+						</tr>
+
+						<tr>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+																			
+						</tr>
+
+						<tr>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+																			
+						</tr>
+						<tr>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+							<td>
+								<div class= "week">
+									<img src = "image/week-three.jpg">
+								</div>
+							</td>
+																			
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+		<footer class = "foot"id = "footer">
+			<div class = "footcontainer">
+					<div class = "content">
+						<p>@Copy Right 2015-Sep-25
+						</p>
+						<p ><a href="mailto:ycbq999@hotmail.com ">Song Tao Chen's Email</a></p>			
+						<p ><a href="https://twitter.com/bzzrs"> My Twitter </a></p>
+					</div>
+			</div>
+		</footer>
+		<div class = "sitemap">
+			<p>
+				this is the site map :blablabla		this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	this is the site map :blablabla	</p>
+
+		</div>
+		
+	</div>
+</body>
+
+</html>

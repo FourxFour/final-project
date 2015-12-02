@@ -1,0 +1,352 @@
+<style>
+	.wrapper{
+		width: 100%;
+		overflow:hidden;
+	}
+	.nav_container {
+		width: 100%;
+		overflow: hidden;
+		
+	}	
+
+	.nav_container .navItem{				
+		height: 100%;	
+		margin-top:30px;	
+	}
+	.logo{
+		float:left;
+		overflow: hidden;
+	}
+	.navItem{
+		float:right;
+	}
+	.navItem ul li{		
+		display:inline;				
+	}
+
+	.navItem ul li a{
+		text-decoration: none;
+		color:#808080;
+		font-size: 180%;		
+		margin-right: 30px;
+	}	
+	.logo img{
+		padding-top:20px;
+		float:left;		
+		max-width: 100%;		
+	}
+	
+
+
+	.header{
+		float: left;
+		height: 100%;
+		padding-left: 10px;
+	}
+	.header h1{
+		font-size: 200%;
+		margin-top: 13px;
+		color:#808080;
+	}
+
+
+	.jumbotron{
+		margin-top:20px;
+		width: 100%;
+		height: 1000px;
+	}
+	.jumbotron img{
+		width: 100%;
+		height: 100%;		
+	}
+
+
+	.intro{
+		width:100%;
+		overflow:hidden;
+	}
+	.intro .intrcontainer{
+		width:100%;
+		overflow:hidden;
+	}
+	.intro .intrcontainer header{
+		width:100%;
+		padding-top:100px;
+		padding-bottom: 100px;
+		background-color: #333333;
+
+	}
+	.intro .intrcontainer header h1{
+		font-size: 300%;
+		color:white;	
+	}
+	.intro .intrcontainer .person1{
+		padding-top: 30px;
+		width:100%;
+		height: 400px;
+		margin:auto;
+
+	}
+
+	.intro .intrcontainer .person1 .imagecontainer{
+		width:40%;
+		float:left;
+	}
+	.intro .intrcontainer .person1 .imagecontainer .personIMG{
+		width: 180px;
+		height:180px;
+
+		border-radius: 50%;
+		overflow:hidden;
+	}
+	.intro .intrcontainer .person1 .imagecontainer .personIMG img{
+		width: 180px;
+		height:180px;
+	}
+	.intro .intrcontainer .person1 .infocontainer{
+		float:left;
+		width: 100%;
+	}
+
+	.intro .intrcontainer .person1 .infocontainer .personInfo{
+		float:left;
+	}
+	.intro .intrcontainer .person1 .infocontainer .personInfo p{
+		font-size: 140%;
+		color:#808080;		
+		padding-bottom: 15px;
+	}
+	.intro .intrcontainer .person1 .container hr{
+		height: 3px;
+		color: #808080;
+		background-color: #808080;
+	}
+
+	.rational{
+		width:100%;
+		height: 600px;
+		overflow:hidden;
+	}
+	.rational .rationcontainer{
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		background-color: #E9E9E9;		
+		background-image: url("image/cs.jpg");
+		background-size: cover;
+	}
+
+	.rational .rationcontainer .imagecontainer {
+		height:100%;
+		width:30%;
+		float:left;
+	}
+	.rational .rationcontainer .imagecontainer .rationalIMG{
+		
+		width: 80%;
+		height:80%;
+		position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);		
+		margin: auto;
+	}
+	.rational .rationcontainer .imagecontainer .rationalIMG img{
+		width: 100%;
+		height:100%;
+	}
+	.rational .rationcontainer .infocontainer .personInfo{
+		font-size: 140%;
+		color:white;		
+		padding-bottom: 15px;	
+	}
+	.rational .rationcontainer .infocontainer .personInfo h1{
+		font-size:300%;
+		text-align:center;
+		padding-top:20px;
+		padding-bottom: 20px;
+	}
+	.rational .rationcontainer .infocontainer .personInfo .enter{
+		width:20%;
+		float:right;
+	}
+
+
+	.rational .rationcontainer .infocontainer .personInfo .enter a{
+		text-decoration: none;
+		color:white;
+		text-align:right;
+	}
+
+	.foot{
+		background-color: black;
+		height: 100px;
+		color:white;
+	}
+	.foot .footcontainer .content{
+		padding-top:20px;
+	}
+	.foot .footcontainer .content p{
+		text-align: right;
+	}
+	.foot .footcontainer .content p a{
+		text-decoration: none;
+		color:white;
+		font-size: 120%;		
+	}
+	.sitemap{
+		background-color: white;
+		height: 500px;
+		color:#808080;
+		font-size: 200%;
+	}
+	.project{
+		width:100%;
+		height: 1800px;
+		background-color: #FAFAFA;
+
+	}
+	.project .projectcontainer {
+		width: 100%;
+		height: 100%;		
+	}
+	.project .projectcontainer .projectheader{
+		width: 100%;
+		height: 15%;	
+		background-color:#848484;	
+		color:white;
+	}
+
+
+	.project .projectcontainer .projectheader header{
+		position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
+	}
+	.project .projectcontainer .projectheader header h1{
+		font-size: 400%;
+		text-align:center;
+	}
+	.project .projectcontainer .contentcontainer{
+		width:75%;
+		height: 70%;
+		margin:auto;
+	}
+	table{
+		width:100%;
+	}
+	table tr{
+		width:100%;
+		height: 350px;
+	}
+	table tr td{
+		width:25%;
+		height:150px;
+		padding:10px 10px 10px 10px;
+	}
+	table tr td .week{
+		width:250px;
+		height:250px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	table tr td img{
+		width:300px;
+		height:300px;
+		
+	}
+
+
+
+	a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #27AE61 url("image/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+	.blog{
+		width:100%;
+		height:1200px;
+		overflow:hidden;
+	}
+
+	.blog .blogcontainer{
+
+		width:100%;
+		height:100%;
+		overflow:hidden;		
+		background: url("image/blog.jpg");
+		background-size: cover;
+	}
+
+	.blog .blogcontainer .infocontainer .personInfo{
+		font-size: 140%;
+		color:black;		
+		padding-bottom: 15px;	
+	}
+	.blog .blogcontainer .infocontainer .personInfo h1{
+		font-size:300%;
+		text-align:center;
+		padding-top:20px;
+		padding-bottom: 20px;
+	}
+	.blog .blogcontainer .infocontainer .personInfo .enter{
+		width:20%;
+		float:right;
+	}
+
+
+	.blog .blogcontainer .infocontainer .personInfo .enter a{
+		text-decoration: none;
+		color:black;
+		text-align:right;
+	}
+
+
+
+	.prototype{
+		width:100%;
+		height:1200px;
+		overflow:hidden;
+	}
+
+	.prototype .prototypecontainer{
+
+		width:100%;
+		height:100%;
+		overflow:hidden;		
+		background: url("image/prototype.jpg");
+		background-size: cover;
+	}
+
+	.prototype .prototypecontainer .infocontainer .personInfo{
+		font-size: 140%;
+		color:white;		
+		padding-bottom: 15px;	
+	}
+	.prototype .prototypecontainer .infocontainer .personInfo h1{
+		font-size:300%;
+		text-align:center;
+		padding-top:20px;
+		padding-bottom: 20px;
+	}
+	.prototype .prototypecontainer .infocontainer .personInfo .enter{
+		width:20%;
+		float:right;
+	}
+
+	.prototype .prototypecontainer .infocontainer .personInfo .enter a{
+		text-decoration: none;
+		color:white;
+		text-align:right;
+	}
+
+
+</style>
